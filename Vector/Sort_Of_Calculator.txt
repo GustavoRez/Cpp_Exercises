@@ -1,0 +1,53 @@
+#include <cstdlib> 
+#include <iostream>   
+
+using namespace std;   
+
+int main(int argc, char *argv[])
+{ 
+     
+    int vetorA[7], vetorB[7], vetorR[7]; 
+    char vetorM[7];      
+
+    cout << "Enter 7 numbers.\n"; 
+
+    for (int i = 0; i <= 6; i++){ 
+        cin >> vetorA [i]; 
+        } 
+
+    cout << "Give me more 7 numbers.\n"; 
+
+    for (int i = 0; i <= 6; i++){ 
+        cin >> vetorB [i]; 
+        } 
+
+    cout << "Which operation do you wanna do? (Sum +, Subtraction - and so on).\n"; 
+
+    for (int i = 0; i <= 6; i++){ 
+        cout << "In this operation: " << vetorA[i] << " ... " << vetorB[i] << endl;
+        cin >> vetorM [i]; 
+
+        if (vetorM[i] == '+'){ 
+           vetorR[i] = vetorA[i] + vetorB[i];         
+        } 
+        if (vetorM[i] == '-'){ 
+           vetorR[i] = vetorA[i] - vetorB[i];         
+        } 
+        if (vetorM[i] == '*'){ 
+           vetorR[i] = vetorA[i] * vetorB[i];         
+        } 
+        if (vetorM[i] == '/'){ 
+           vetorR[i] = vetorA[i] / vetorB[i];         
+        } 
+    } 
+
+    for (int i = 0; i <= 6; i++){ 
+        cout << vetorR[i] << " "; 
+        } 
+
+
+    system("PAUSE"); 
+
+    return EXIT_SUCCESS; 
+
+} 

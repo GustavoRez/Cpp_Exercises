@@ -1,0 +1,25 @@
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int soma(float a, float b){
+        
+    int r;
+    r=a+b;
+    return r;
+}
+
+int main(int argc, char *argv[])
+{
+    float x,y;
+    cin>>x>>y;
+    cout<<soma(x,y)<<"\n";
+    
+    for(int i=0; i<soma(x,y); i++){
+            
+            }
+    
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}

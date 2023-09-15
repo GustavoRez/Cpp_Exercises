@@ -1,0 +1,37 @@
+#include <cstdlib>  
+#include <iostream>  
+
+using namespace std;  
+
+int main(int argc, char *argv[]) {  
+
+    int vetor[12]; 
+
+    double contM = 0, contP = 0;    
+
+    cout << "Give me 12 numbers. \n"; 
+
+    for (int i = 0; i <= 11; i++){ 
+
+        cin >> vetor [i]; 
+
+        contM += vetor[i]; 
+
+        if (vetor[i] % 2 == 0) 
+           contP++; 
+        }          
+
+        cout << "You insert the numbers: \n"; 
+
+        for (int i = 0; i <= 11; i++){ 
+            cout << vetor[i] << " "; 
+            } 
+
+        cout << "\nThe percent of pair numbers was: " << (contP/ 12) * 100 << "%"; 
+        cout << "\nAnd the average of them: " << contM/12 << endl; 
+  
+
+    system("PAUSE");  
+    return EXIT_SUCCESS;  
+
+} 

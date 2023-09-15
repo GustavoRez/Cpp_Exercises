@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <time.h>
+
+int main (){
+	
+	int n;
+	
+	printf("Numero aleatorio:\n\n");
+	
+	srand(time(NULL));
+	
+	for (n = 0; n < 1; n++){
+		
+		printf("%d ", rand() %100);
+	}
+	
+	getch();
+}
